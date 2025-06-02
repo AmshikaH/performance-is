@@ -35,8 +35,6 @@ source $script_dir/test_scenarios.sh
 
 function before_execute_test_scenario() {
 
-    download_file "$wso2is_1_host_alias" $is_home/repository/logs/wso2carbon.log "$wso2is_1_host_alias_setup.log"
-    download_file "$wso2is_2_host_alias" $is_home/repository/logs/wso2carbon.log "$wso2is_2_host_alias_setup.log"
     ssh $wso2is_1_host_alias "./restart-is.sh -m $heap"
     ssh $wso2is_2_host_alias "./restart-is.sh -m $heap"
 
