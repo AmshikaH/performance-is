@@ -2,6 +2,7 @@
 hostname = "localhost"
 node_ip = "127.0.0.1"
 base_path = "https://$ref{server.hostname}:${carbon.management.port}"
+force_local_cache = true
 
 [super_admin]
 username = "admin"
@@ -177,5 +178,3 @@ grant_validator="org.wso2.carbon.identity.oauth2.grant.token.exchange.TokenExcha
 IdTokenAllowed=true
 IATValidityPeriod="86400"
 
-[server]
-force_local_cache = true
