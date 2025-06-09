@@ -176,12 +176,3 @@ grant_validator="org.wso2.carbon.identity.oauth2.grant.token.exchange.TokenExcha
 [oauth.custom_grant_type.properties]
 IdTokenAllowed=true
 IATValidityPeriod="86400"
-
-[cache.service_provider_cache]
-enable = false
-
-[cache.app_info_cache]
-enable = false
-
-[cache.service_provider_cache_id]
-enable = false
