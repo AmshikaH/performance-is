@@ -169,6 +169,16 @@ members = ["member_ip_2:4000", "member_ip_1:4000"]
 [oauth.grant_type.jwt]
 iat_validity_period=1440
 
+
+[cache.service_provider_cache]
+enable = false
+
+[cache.app_info_cache]
+enable = false
+
+[cache.service_provider_cache_id]
+enable = false
+
 [[oauth.custom_grant_type]]
 name="urn:ietf:params:oauth:grant-type:token-exchange"
 grant_handler="org.wso2.carbon.identity.oauth2.grant.token.exchange.TokenExchangeGrantHandler"
